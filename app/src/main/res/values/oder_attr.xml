@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TRSOrderLayout_layout">
+        <!--显示的优先级 默认为1 优先级越高，越先显示-->
+        <attr name="layout_order_index" format="integer" />
+        <!--压缩模式为缩略号时，最最正文字数不包括省略号本身，如果小于这个字数则隐藏文字-->
+        <attr name="layout_ellipses_min_size" format="integer" />
+        <!--压缩模式 支持两种，隐藏和显示省略号-->
+        <attr name="layout_compress_mode" format="enum">
+            <enum name="hide" value="0" />
+            <enum name="ellipses" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
